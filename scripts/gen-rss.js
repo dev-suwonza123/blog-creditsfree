@@ -5,9 +5,9 @@ const matter = require('gray-matter')
 
 async function generate() {
   const feed = new RSS({
-    title: 'Your Name',
+    title: 'เครดิตฟรีอัพเดต',
     site_url: 'https://blog-creditsfree.vercel.app/',
-    feed_url: 'https://yoursite.com/feed.xml'
+    feed_url: 'https://blog-creditsfree.vercel.app/feed.xml'
   })
 
   const posts = await fs.readdir(path.join(__dirname, '..', 'pages', 'posts'))
